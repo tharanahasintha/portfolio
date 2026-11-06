@@ -4,11 +4,17 @@
   <meta charset="UTF-8" />
   <title>Tharana Hasintha | Software Engineering Undergraduate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Tharana Hasintha – Software Engineering Undergraduate at University of Westminster (IIT). Portfolio showcasing full‑stack, IoT, robotics and Java projects." />
+  <meta name="description" content="Tharana Hasintha – Software Engineering Undergraduate at University of Westminster (IIT) and Software Developer Intern at the Ministry of Finance, Sri Lanka. Java, Spring Boot, microservices, Vue.js and React projects." />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Small additions for the new experience / project bullet lists -->
+  <style>
+    .card-list { margin: 12px 0 0; padding-left: 1.2rem; }
+    .card-list li { margin-bottom: 7px; line-height: 1.6; }
+  </style>
 </head>
 
 <body>
@@ -25,6 +31,7 @@
 
       <nav aria-label="Primary navigation">
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
@@ -44,8 +51,9 @@
           <h1 id="typing-text-2">software for real problems.</h1>
 
           <p class="hero-sub">
-            Self‑driven Software Engineering undergraduate at the University of Westminster (IIT),
-            with strong interests in full‑stack development, Java and Node.js backends, AI and ML Concepts.
+            Software Engineering undergraduate at the University of Westminster (IIT) and Software Developer Intern
+            at the Ministry of Finance, Sri Lanka, where I design and build a live full‑stack system for the
+            Tax Appeals Commission. I work with Java, Spring Boot, microservices, Vue.js and React.
           </p>
           <div class="hero-actions">
             <a href="#projects" class="btn-primary">View Projects</a>
@@ -57,28 +65,28 @@
         <aside class="hero-card animate-on-scroll">
           <div class="hero-card-header">
             <div class="hero-card-title">
-              <span>Microservices-Based E-Commerce System</span>
-              <span>Individual Project • 2026</span>
+              <span>Tax Appeals Management System (TAMS)</span>
+              <span>Internship Project • Tax Appeals Commission, Sri Lanka</span>
             </div>
-            <span class="hero-status">Ongoing</span>
+            <span class="hero-status">Live • Ongoing</span>
           </div>
 
           <p class="hero-snippet">
-            Scalable microservices-based e-commerce platform with secure authentication, real-time order processing,
-            and integrated payment gateway using modern backend architecture.
+            A full‑stack microservices system that digitises the Tax Appeals Commission’s appeal process,
+            from appeal filing and committee queues to hearing scheduling, with secure role‑based access.
           </p>
 
           <div class="hero-tech-grid">
-            <div class="chip"><span>Spring Boot • REST APIs</span><span>Backend</span></div>
-            <div class="chip"><span>JWT • OAuth • BCrypt</span><span>Security</span></div>
-            <div class="chip"><span>MySQL • Kafka</span><span>Data & Messaging</span></div>
-            <div class="chip"><span>Docker • API Gateway</span><span>Architecture</span></div>
-            <div class="chip"><span>PayHere • Git</span><span>Payments & Workflow</span></div>
+            <div class="chip"><span>Spring Boot • Hibernate</span><span>Backend</span></div>
+            <div class="chip"><span>Vue.js</span><span>Frontend</span></div>
+            <div class="chip"><span>Eureka • API Gateway • OpenFeign</span><span>Microservices</span></div>
+            <div class="chip"><span>JWT • RBAC • BCrypt</span><span>Security</span></div>
+            <div class="chip"><span>MySQL • Swagger • Git</span><span>Data & API Docs</span></div>
           </div>
 
           <div class="hero-links">
-            <a href="#" target="_blank" rel="noopener" class="hero-link">Project</a>
-            <a href="https://github.com/tharanahasintha/Sellestra.git" class="hero-link">GitHub</a>
+            <a href="#experience" class="hero-link">Experience</a>
+            <a href="#projects" class="hero-link">All projects</a>
           </div>
         </aside>
       </section>
@@ -92,16 +100,89 @@
             <span class="card-meta">2024 – Present · University of Westminster (IIT)</span>
           </div>
           <p class="card-body">
-            I focus on strong Software Engineering fundamentals while building practical systems in web,
-            Java backends, AI and ML and IoT. I enjoy extending coursework into real‑world projects with clean
-            architecture and clear UX.
+            I focus on strong Software Engineering fundamentals while building practical systems across web,
+            Java backends, microservices, AI and ML and IoT. I enjoy taking a feature from database design and
+            REST APIs through to the user interface, and extending coursework into real‑world projects with
+            clean architecture and clear UX.
           </p>
+        </article>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <h2>EXPERIENCE</h2>
+
+        <article class="card animate-on-scroll">
+          <div class="card-header">
+            <div class="card-title">Software Developer Intern</div>
+            <div class="card-meta">6 months · ITMD, Ministry of Finance, Sri Lanka</div>
+          </div>
+          <p class="card-body">
+            Designed and developed the Tax Appeals Management System (TAMS), a live full‑stack web application
+            used by the Tax Appeals Commission, Government of Sri Lanka.
+          </p>
+          <ul class="card-body card-list">
+            <li>Built the microservices backend with Spring Boot, Hibernate and MySQL, using Eureka for service discovery, an API Gateway for routing and OpenFeign for service‑to‑service calls.</li>
+            <li>Developed the Vue.js frontend, including appeal and committee queues, hearing scheduling and receipt validation screens.</li>
+            <li>Implemented JWT authentication and role‑based access control, with account lockout, password‑history enforcement and a notification flow for temporary credentials.</li>
+            <li>Modelled the appeal workflow across services using saga orchestration and a versioned rules table for legally derived parameters.</li>
+            <li>Documented the REST APIs with Swagger, and handled API testing, debugging and integration between modules.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Hibernate</span>
+            <span class="tag">Vue.js</span>
+            <span class="tag">Microservices</span>
+            <span class="tag">Eureka</span>
+            <span class="tag">API Gateway</span>
+            <span class="tag">OpenFeign</span>
+            <span class="tag">JWT</span>
+            <span class="tag">RBAC</span>
+            <span class="tag">Swagger</span>
+            <span class="tag">MySQL</span>
+          </div>
         </article>
       </section>
 
       <!-- PROJECTS -->
       <section id="projects">
         <h2>PROJECTS</h2>
+
+        <a href="#experience" class="card-link">
+          <article class="card animate-on-scroll">
+            <div class="card-header">
+              <div class="card-title">Tax Appeals Management System (TAMS)</div>
+              <div class="card-meta">2026 · Internship · Fullstack · Microservices · Live</div>
+            </div>
+
+            <p class="card-body">
+              A live system built for the Tax Appeals Commission, Government of Sri Lanka, to digitise and
+              automate the commission’s appeal process. Source code is private, so the details are below.
+            </p>
+            <ul class="card-body card-list">
+              <li>Separate services for authentication, user management, appeals, hearings and letters, connected through Eureka and an API Gateway.</li>
+              <li>Secure access with JWT, role‑based permissions, lockout after repeated failed logins, password history and admin unlock with a temporary password.</li>
+              <li>Workflow handled with saga orchestration and a versioned rules configuration for parameters set by law.</li>
+              <li>Vue.js frontend with queues for officers and committees, hearing scheduling and receipt validation.</li>
+            </ul>
+
+            <div class="tag-row">
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Vue.js</span>
+              <span class="tag">Hibernate</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Microservices</span>
+              <span class="tag">Eureka</span>
+              <span class="tag">API Gateway</span>
+              <span class="tag">OpenFeign</span>
+              <span class="tag">JWT</span>
+              <span class="tag">RBAC</span>
+              <span class="tag">Swagger</span>
+              <span class="tag">REST APIs</span>
+            </div>
+          </article>
+        </a>
 
         <a href="https://github.com/tharanahasintha/Sellestra.git" target="_blank" rel="noopener" class="card-link">
           <article class="card animate-on-scroll">
@@ -141,19 +222,22 @@
             <p class="card-body">
               Six‑wheel drive line‑following robot integrated with a web‑based library system.
               Built using ESP32, sensor arrays and a responsive tablet UI.
+              My role: backend developer and robot path‑logic engineer, connecting the robot to the
+              Spring Boot backend through Firebase.
             </p>
             <div class="tag-row">
               <span class="tag">ESP32</span>
               <span class="tag">C / C++</span>
               <span class="tag">IoT</span>
               <span class="tag">REST · Wi‑Fi</span>
-              <span class="tag">React . Node.js</span>
+              <span class="tag">React · Node.js</span>
               <span class="tag">Java · Spring Boot</span>
               <span class="tag">Firebase Realtime</span>
               <span class="tag">MySQL</span>
             </div>
           </article>
         </a>
+
         <a href="https://github.com/tharanahasintha/web-project-thmailer" target="_blank" rel="noopener" class="card-link">
             <article class="card animate-on-scroll">
                 <div class="card-header">
@@ -161,15 +245,15 @@
                     <div class="card-meta">2025 · Java · Desktop Application</div>
                 </div>
                 <p class="card-body">
-                    Desktop email client inspired by Gmail that works completely offline.including registration (username@xyzmailer.com), login, compose
+                    Desktop email client inspired by Gmail that works completely offline, including registration (username@xyzmailer.com), login, compose
                     (with CC/BCC), drafts, inbox, sent items, and junk management. Implemented MVC architecture, DAO pattern, and session-based
-                    authentication for secure access.file‑based persistence using Java OOP principles.
+                    authentication for secure access, with file‑based persistence using Java OOP principles.
                 </p>
                 <div class="tag-row">
                     <span class="tag">Java</span>
                     <span class="tag">OOP</span>
                     <span class="tag">JSP</span>
-                    <span class="tag">Sevlets</span>
+                    <span class="tag">Servlets</span>
                     <span class="tag">JSTL</span>
                     <span class="tag">JDBC</span>
                     <span class="tag">MySQL</span>
@@ -211,7 +295,7 @@
             </div>
             <p class="card-body">
               Responsive awareness website for the UN Zero Hunger goal with clean typography
-              and accessible layouts.Group project using HTML, CSS and JavaScript.
+              and accessible layouts. Group project using HTML, CSS and JavaScript.
             </p>
             <div class="tag-row">
               <span class="tag">HTML</span>
@@ -246,35 +330,47 @@
         <div class="grid-3">
           <div class="skill-card animate-on-scroll">
             <h3>Languages</h3>
-            <ul><li>Node.js</li><li>Java SE/EE</li><li>Python</li><li>JavaScript</li></ul>
+            <ul><li>Java SE/EE</li><li>JavaScript</li><li>Node.js</li><li>Python</li><li>SQL</li><li>C / C++</li></ul>
           </div>
           <div class="skill-card animate-on-scroll">
-            <h3>FRAMEWORKS & LIBRARIES</h3>
-            <ul><li>Spring Boot</li><li>Hibernate</li><li>Maven</li><li>JWT</li><li>REST API</li></ul>
+            <h3>BACKEND & FRAMEWORKS</h3>
+            <ul><li>Spring Boot</li><li>Spring Security</li><li>Hibernate / JPA</li><li>Maven</li><li>MVC</li></ul>
           </div>
           <div class="skill-card animate-on-scroll">
-            <h3>WEB DEVELOPMENT</h3>
-            <ul><li>HTML</li><li>CSS</li><li>React.JS</li><li>JSP</li><li>Servlets</li></ul>
+            <h3>MICROSERVICES & MESSAGING</h3>
+            <ul><li>Eureka Service Discovery</li><li>API Gateway</li><li>OpenFeign</li><li>Saga Orchestration</li><li>Apache Kafka</li></ul>
+          </div>
+          <div class="skill-card animate-on-scroll">
+            <h3>SECURITY</h3>
+            <ul><li>JWT</li><li>OAuth 2.0 / Google OAuth</li><li>BCrypt</li><li>Role‑Based Access Control</li></ul>
+          </div>
+          <div class="skill-card animate-on-scroll">
+            <h3>FRONTEND</h3>
+            <ul><li>Vue.js</li><li>React.js</li><li>Next.js</li><li>HTML5 / CSS3</li><li>JSP / Servlets</li></ul>
+          </div>
+          <div class="skill-card animate-on-scroll">
+            <h3>APIS & TESTING</h3>
+            <ul><li>REST APIs</li><li>Swagger (OpenAPI)</li><li>Postman</li><li>API Testing & Debugging</li></ul>
           </div>
           <div class="skill-card animate-on-scroll">
             <h3>DATABASES</h3>
-            <ul><li>MySQL</li><li>Oracle SQL</li><li>PostgreSQL</li><li>Firebase</li></ul>
+            <ul><li>MySQL</li><li>PostgreSQL</li><li>Oracle SQL</li><li>Firebase / Firestore</li><li>Database Design</li></ul>
+          </div>
+          <div class="skill-card animate-on-scroll">
+            <h3>DEVOPS & DEPLOYMENT</h3>
+            <ul><li>Git & GitHub</li><li>Docker</li><li>Railway</li><li>Apache Tomcat</li></ul>
+          </div>
+          <div class="skill-card animate-on-scroll">
+            <h3>TOOLS & DESIGN</h3>
+            <ul><li>IntelliJ IDEA</li><li>Spring Tool Suite</li><li>VS Code</li><li>Linux Basics</li><li>Figma</li><li>Photoshop</li></ul>
           </div>
           <div class="skill-card animate-on-scroll">
             <h3>HARDWARE</h3>
             <ul><li>ESP32</li><li>Arduino</li><li>Sensors & Motors</li></ul>
           </div>
           <div class="skill-card animate-on-scroll">
-            <h3>TOOLS</h3>
-            <ul><li>Git</li><li>VS Code</li><li>IntelliJ IDEA</li><li>Spring Tool Suite</li><li>Linux Basics</li><li>Postman</li></ul>
-          </div>
-          <div class="skill-card animate-on-scroll">
-            <h3>DESIGN</h3>
-            <ul><li>Figma</li><li>Photoshop</li></ul>
-          </div>
-          <div class="skill-card animate-on-scroll">
-            <h3>ARCHITECTURE & DESIGN PATTERNS</h3>
-            <ul><li>MVC</li><li>Microservice Architecture</li></ul>
+            <h3>ARCHITECTURE & PRACTICES</h3>
+            <ul><li>Microservice Architecture</li><li>MVC & DAO Patterns</li><li>OOP & Design Patterns</li><li>Data Structures & Algorithms</li><li>Agile / Scrum</li></ul>
           </div>
           <div class="skill-card animate-on-scroll">
             <h3>SOFT SKILLS</h3>
